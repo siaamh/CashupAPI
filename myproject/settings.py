@@ -99,12 +99,12 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # render postgressQL database
 # DATABASES = {
@@ -120,19 +120,19 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # postgresql://neondb_owner:npg_GJscOVmS3hg1@ep-cool-meadow-a1wbvvcn-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neondb',  # Database name
-        'USER': 'neondb_owner',  # Database user
-        'PASSWORD': 'npg_GJscOVmS3hg1',  # Database password
-        'HOST': 'ep-cool-meadow-a1wbvvcn-pooler.ap-southeast-1.aws.neon.tech',  # Neon host
-        'PORT': '5432',  # Default PostgreSQL port
-        'OPTIONS': {
-            'sslmode': 'require',  # Enable SSL
-        },
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'neondb',  # Database name
+#         'USER': 'neondb_owner',  # Database user
+#         'PASSWORD': 'npg_GJscOVmS3hg1',  # Database password
+#         'HOST': 'ep-cool-meadow-a1wbvvcn-pooler.ap-southeast-1.aws.neon.tech',  # Neon host
+#         'PORT': '5432',  # Default PostgreSQL port
+#         'OPTIONS': {
+#             'sslmode': 'require',  # Enable SSL
+#         },
+#     }
+# }
 
 
 # DATABASES= {
