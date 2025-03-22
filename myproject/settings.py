@@ -147,6 +147,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://cashup-beta.vercel.app",
     "https://*.railway.app", 
+    "https://cashupapi-3.onrender.com",
+
       # Allow frontend access
 ]
 
@@ -157,6 +159,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://cashup-beta.vercel.app", 
     "https://*.onrender.com", 
     "https://*.railway.app", 
+    "https://cashupapi-3.onrender.com",
 ]
 
 
